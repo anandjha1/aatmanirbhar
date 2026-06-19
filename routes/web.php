@@ -6,5 +6,5 @@ use Illuminate\Foundation\Inspiring;
 Route::get('/', function () {
     $qoute = Inspiring::quote();
 
-    return view('welcome', ["qoute"=>$qoute]);
+    return view('welcome', ["qoute"=>$qoute, "name"=>"Anand Jha"]);
 });
