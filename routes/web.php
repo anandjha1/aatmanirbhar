@@ -1,7 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Foundation\Inspiring;
 
 Route::get('/', function () {
-    return view('welcome');
+    $qoute = Inspiring::quote();
+
+    return view('welcome', ["qoute"=>$qoute]);
 });
